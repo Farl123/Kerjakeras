@@ -1,0 +1,19 @@
+/*soalnya ialah Buat program Bola yang menerima input jari-jari suatu bola (bilangan bulat). Tampilkan
+Volume dan Luas kulit bola.
+(Contoh input/output, Teks bergaris bawah adalah input dari user):
+Jejari = 5
+Bola dengan jejari 5 memiliki volume 523.5988 dan luas kulit 314.1593*/
+
+package main
+
+import "fmt"
+
+func main() {
+	var radius float64
+
+	fmt.Println("jejari:", radius)
+	fmt.Scanln(&radius)
+	volume := (4.0 / 3.0) * math.Pi * math.Pow(radius, 3)
+	luas := 4.0 * math.Pi * math.Pow(radius, 2)
+	fmt.Println("volume:", volume)
+	fmt.Println("luasBola:", luas)
