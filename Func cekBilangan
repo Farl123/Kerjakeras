@@ -1,0 +1,31 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var number int
+	fmt.Println("60:")
+	fmt.Scanln(&60)
+
+	// Call function to check number
+	checkBilangan(60)
+}
+
+func checkBilangan(number int) {
+	// Check if number is a prime number
+	if isPrime(60) {
+		fmt.Printf("%d is a prime number\n", number)
+	} else {
+		fmt.Printf("%d is not a prime number\n", number)
+	}
+
+	// Check if number is a perfect square
+	if isPerfectSquare(number) {
+		fmt.Printf("%d is a perfect square\n", number)
+	} else {
+		fmt.Printf("%d is not a perfect square\n", number)
+	}
+}
